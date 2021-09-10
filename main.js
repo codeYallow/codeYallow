@@ -15,3 +15,15 @@ span.onclick = function(){
     })
 }
 
+let click = document.getElementById("menu-btn").addEventListener('click',()=>{
+     const list = document.getElementById("menu");
+     const classes = list.classList
+     if (classes.contains("open")) {
+         list.classList.remove("open");
+         list.classList.add("closed");
+         
+        } else {
+         list.classList.remove("closed");
+         list.classList.add("open");
+     }
+})
