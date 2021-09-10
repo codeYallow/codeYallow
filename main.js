@@ -14,3 +14,5 @@ span.onclick = function(){
         behavior:"smooth"
     })
 }
+
+document.getElementsByTagName('video').play();
