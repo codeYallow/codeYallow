@@ -15,4 +15,3 @@ span.onclick = function(){
     })
 }
 
-document.getElementsByTagName('video').play();
