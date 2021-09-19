@@ -14,16 +14,21 @@ span.onclick = function(){
         behavior:"smooth"
     })
 }
-
-let click = document.getElementById("menu-btn").addEventListener('click',()=>{
-     const list = document.getElementById("menu");
-     const classes = list.classList
-     if (classes.contains("open")) {
-         list.classList.remove("open");
-         list.classList.add("closed");
+let click = document.getElementById("menu-btn")
+const list  = document.getElementById("menu")
+click.onclick = function () {
+    list.classList.toggle("open")
+    
+}
+// let click = document.getElementById("menu-btn").addEventListener('click',()=>{
+//      const list = document.getElementById("menu");
+//      const classes = list.classList
+//      if (classes.contains("open")) {
+//          list.classList.remove("open");
+//          list.classList.add("closed");
          
-        } else {
-         list.classList.remove("closed");
-         list.classList.add("open");
-     }
-})
+//         } else {
+//          list.classList.remove("closed");
+//          list.classList.add("open");
+//      } ???????????? sho mshank ahmed????????
+// })
